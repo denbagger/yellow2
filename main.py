@@ -1,10 +1,10 @@
 import random
 import sys
 
-from PyQt6.QtGui import QPainter, QColor
+from PyQt5.QtGui import QPainter, QColor
 from random import randint
-from PyQt6.QtWidgets import QWidget, QApplication, QMainWindow
-from PyQt6 import uic
+from PyQt5.QtWidgets import QWidget, QApplication, QMainWindow
+from PyQt5 import uic
 
 
 class Example(QMainWindow):
