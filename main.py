@@ -1,8 +1,10 @@
+import random
 import sys
 
-from PyQt5.QtGui import QPainter, QColor
-from PyQt5.QtWidgets import QWidget, QApplication, QMainWindow
-from PyQt5 import uic
+from PyQt6.QtGui import QPainter, QColor
+from random import randint
+from PyQt6.QtWidgets import QWidget, QApplication, QMainWindow
+from PyQt6 import uic
 
 
 class Example(QMainWindow):
@@ -25,7 +27,8 @@ class Example(QMainWindow):
 
     def draw_circle(self, qp):
         qp.setBrush(QColor(255, 255, 0))
-        qp.drawEllipse(125, 100, 200, 200)
+        a = random.randint(10, 400)
+        qp.drawEllipse(125, 100, a, a)
 
 
 if __name__ == '__main__':
